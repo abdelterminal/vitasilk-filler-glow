@@ -1,6 +1,7 @@
 import { NextResponse } from "next/server";
 import { appendFile, mkdir } from "node:fs/promises";
 import path from "node:path";
+import { PRICE_DH } from "@/lib/config";
 
 /**
  * COD order intake.
@@ -54,7 +55,14 @@ export async function POST(request: Request) {
     phone,
     city,
     qty,
-    total: Number(body.total) || 0,
+    // Computed here, NOT taken from the request. The whole project is built on
+    // "every price derives from lib/config.ts", and the order log was the one
+    // place that invariant leaked: a browser holding a stale bundle after a
+    // price change would write the old total into your sheet, and the value was
+    // caller-controlled besides. qty is already validated to an integer 1–5
+    // above, so this is the same arithmetic the client did, done somewhere it
+    // cannot drift.
+    total: qty * PRICE_DH,
     lang: body.lang === "fr" ? "fr" : "ar",
     at: new Date().toISOString(),
   };
