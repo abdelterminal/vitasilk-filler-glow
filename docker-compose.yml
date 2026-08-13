@@ -1,0 +1,47 @@
+# Vitasilk Filler Glow Complex Kit 2 x 1L — single-service deployment.
+#
+#   docker compose up -d --build
+#
+# Port map on this VPS: 80/443 belong to the shared Traefik proxy (vitasilk.ma
+# and vitasilk-com), 3001/8080/8081 to the vitaplex stack, 8082-8084 to the sos
+# pages. This project uses 8090.
+#
+# The port is published on all interfaces because these pages have no domain
+# yet, which is how the sos pages on the same box are deployed. Until then the
+# Node server is directly exposed, so do not leave it that way indefinitely.
+#
+# When a domain is added: drop the ports: mapping below and attach Traefik
+# labels instead, matching the existing vitasilk-* containers. Do not start a
+# second reverse proxy.
+
+services:
+  web:
+    build: .
+    image: vitasilk-filler-glow:latest
+    container_name: vitasilk-filler-glow
+    restart: unless-stopped
+    ports:
+      - "8090:3000"
+    environment:
+      # The Google Apps Script /exec URL. Server-side only — never rename this
+      # to NEXT_PUBLIC_*, which would ship a public write handle to your order
+      # sheet inside the browser bundle.
+      #
+      # Set it in a .env file beside this one, or in the shell. Left unset, the
+      # order route falls back to the JSONL log in the volume below, so the
+      # container still runs and no lead is lost.
+      SHEETS_ENDPOINT: ${SHEETS_ENDPOINT:-}
+    volumes:
+      # Order fallback sink. This is the safety net that catches leads when
+      # Sheets is unreachable — without a volume it lives in the container's
+      # writable layer and is destroyed on the next `up --build`.
+      - orders:/app/data
+    logging:
+      # A COD box left running for months should not fill its disk with logs.
+      driver: json-file
+      options:
+        max-size: "10m"
+        max-file: "3"
+
+volumes:
+  orders:

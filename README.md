@@ -149,3 +149,48 @@ are no width/height props to drift. Unimported files are not emitted at all.
 - [ ] Replace `SITE_URL` — still `localhost:3000`, which breaks the OG tags
 - [ ] Set `SHEETS_ENDPOINT` in the deploy environment
 - [ ] Confirm `PRICE_DH` (2499) and `OLD_PRICE_DH` (2999 → 17% badge)
+
+## Docker
+
+```bash
+echo "SHEETS_ENDPOINT=https://script.google.com/macros/s/AKfy…/exec" > .env
+docker compose up -d --build
+```
+
+Serves on port `8090`, published on all interfaces. That is deliberate but
+temporary: this page has no domain yet, so the port is how you reach it. Once a
+domain exists, drop the `ports:` mapping and attach Traefik labels instead —
+the VPS already runs a shared Traefik on 80/443. A reverse proxy in front is
+what the Next.js self-hosting guide recommends, and it terminates TLS and
+absorbs malformed requests that the Node server otherwise takes directly.
+
+`.env` is gitignored. `SHEETS_ENDPOINT` is a live write handle to the order
+sheet, so it is injected at runtime and never baked into a layer or prefixed
+`NEXT_PUBLIC_`. Leave it unset and the page still runs, with orders falling
+back to `data/orders.jsonl` in the `orders` volume.
+
+The build is three stages ending in `node:22-alpine`: `npm ci`, then
+`next build` producing `.next/standalone`, then a runtime holding only the
+server, `.next/static` and `public/`. It runs as the non-root `nextjs` user.
+
+Two things to leave alone unless you mean it:
+
+- **`outputFileTracingIncludes` in `next.config.ts`** pulls `node_modules/sharp`
+  into the standalone bundle. `sharp` is an *optional* dependency of Next, and
+  tracing does not reliably follow it. Drop that entry and the image builds and
+  starts fine, then 500s on the first optimised image — i.e. every image here.
+- **`data/` is a named volume.** It holds the order fallback log, including
+  leads flagged `"sheetsError": true` that never reached the Sheet. In the
+  container's writable layer they would vanish on the next rebuild.
+
+Orders survive redeploys:
+
+```bash
+docker compose exec web cat /app/data/orders.jsonl
+```
+
+The build needs egress to `fonts.googleapis.com` — `next/font/google` fetches
+the typefaces at build time, not at runtime.
+
+Before going live, set `SITE_URL` in `lib/config.ts` to the real domain. It is
+compiled into the build, so changing it needs `up -d --build`, not a restart.
