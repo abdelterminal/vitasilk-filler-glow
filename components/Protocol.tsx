@@ -95,7 +95,7 @@ export function Protocol() {
           <p className="inline-block rounded-full bg-gold-light/15 px-5 py-2 text-sm font-medium uppercase tracking-[0.2em] text-gold-light">
             {t.protocol.noPause}
           </p>
-          <p className="mx-auto mt-4 max-w-xl text-sm leading-relaxed text-crema-dim">
+          <p className="mx-auto mt-4 max-w-xl text-base leading-relaxed text-crema-dim">
             {t.protocol.noPauseNote}
           </p>
         </Reveal>

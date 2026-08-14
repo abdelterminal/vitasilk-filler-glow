@@ -12,9 +12,9 @@ export const fr = {
     title1: "Filler",
     title2: "Glow",
     subtitle:
-      "Le kit en deux étapes qui comble la fibre au lieu de la couvrir. Huiles de copaïba et de pracaxi, complexe d'acides aminés — et aucun temps de pause.",
-    cta: (price: string) => `Je commande — ${price}`,
-    badge1: "0% Formol",
+      "Le kit en deux étapes qui agit au cœur de la fibre au lieu de la couvrir. Huiles de copaïba et de pracaxi, complexe d'acides aminés — et aucun temps de pause.",
+    cta: (price: string) => `Commander — ${price}`,
+    badge1: "0 % de formol",
     badge2: "Kit 2 × 1 L",
     badge3: "Sans temps de pause",
     scroll: "Découvrir",
@@ -25,30 +25,30 @@ export const fr = {
     "Huile de pracaxi",
     "Sans temps de pause",
     "Complexe d'acides aminés",
-    "Kit salon 2 × 1 L",
+    "Kit professionnel 2 × 1 L",
   ],
   problem: {
-    title: "Un cheveu terne n'est pas sale. Il est creux.",
+    title: "Un cheveu terne n'est pas sale. Il a perdu de sa matière.",
     subtitle:
-      "Colorations, chaleur, eau calcaire : la fibre se vide et se creuse. La lumière n'a plus rien à accrocher, et les soins de surface glissent sur un cheveu poreux au lieu de le remplir.",
+      "Les colorations, la chaleur et l'eau calcaire peuvent fragiliser la fibre capillaire. Une surface capillaire irrégulière reflète moins bien la lumière, ce qui peut rendre les cheveux plus ternes, et les soins de surface glissent sur un cheveu poreux.",
     points: [
-      "Cheveux poreux qui boivent tout et ne retiennent rien",
-      "Longueurs plates, sans densité ni relief",
-      "Éclat éteint : la lumière ne se reflète plus",
+      "Cheveux poreux qui absorbent rapidement les soins, mais perdent facilement leur hydratation",
+      "Longueurs plates, qui manquent de corps",
+      "Éclat éteint : la lumière se reflète moins bien",
       "Pointes qui fourchent et cassent au brossage",
     ],
     promiseTitle: "La promesse Filler Glow",
     promise:
-      "Combler, puis sceller. L'étape 1 purifie et ouvre la fibre, l'étape 2 la remplit d'acides aminés et de protéine brésilienne, puis les huiles de copaïba et de pracaxi referment l'écaille. Le cheveu retrouve sa densité — et la lumière retrouve une surface où accrocher.",
+      "Apporter, puis lisser. L'étape 1 purifie et prépare la fibre, l'étape 2 lui apporte des acides aminés et de la protéine brésilienne, puis les huiles de copaïba et de pracaxi aident à lisser la surface. Les cheveux paraissent plus souples, plus brillants et plus faciles à coiffer.",
   },
   safety: {
     title: "Sans formol. Sans acide glyoxylique.",
     subtitle:
-      "Un soin protéiné professionnel que vous pouvez répéter sereinement, saison après saison.",
+      "Un soin protéiné professionnel à utiliser en respectant les instructions et les précautions indiquées.",
     items: [
       {
         title: "Sans formol",
-        desc: "Pas de vapeurs irritantes pour les yeux ni pour les voies respiratoires.",
+        desc: "Une formule conçue pour offrir une application plus confortable.",
       },
       {
         title: "Sans acide glyoxylique",
@@ -56,7 +56,7 @@ export const fr = {
       },
       {
         title: "Tous types de cheveux",
-        desc: "Colorés, méchés, bouclés ou naturels — le complexe s'adapte à la porosité.",
+        desc: "Colorés, méchés, bouclés ou naturels — la formule est conçue pour accompagner les besoins de différents types de cheveux.",
       },
     ],
   },
@@ -64,21 +64,21 @@ export const fr = {
     eyebrow: "Le protocole",
     title: "Deux étapes. Aucun temps de pause.",
     subtitle:
-      "Un flacon prépare, l'autre comble. C'est cette séquence qui fait la différence : un soin appliqué sur une fibre non préparée reste en surface et part au premier lavage.",
+      "Un flacon prépare, l'autre apporte les actifs. C'est cette séquence qui fait la différence : un soin appliqué sur une fibre non préparée reste en surface et part au premier lavage.",
     noPause: "Sans temps de pause",
     noPauseNote:
       "Vous enchaînez les deux étapes sans attendre. Comptez environ 45 minutes en tout, pas les 2 heures d'un lissage classique.",
     steps: [
       {
         eyebrow: "Étape 1",
-        title: "Shampooing Pré-Traitement",
-        desc: "Il élimine le calcaire, les silicones et les résidus qui bouchent la fibre, puis ouvre l'écaille. Sans lui, l'étape 2 ne pénètre pas — elle reste posée dessus.",
+        title: "Shampooing pré-traitement",
+        desc: "Il élimine le calcaire, les silicones et les résidus déposés sur la fibre, et la prépare à recevoir l'étape 2. Sans lui, l'étape 2 pénètre beaucoup moins bien — elle reste posée dessus.",
         volume: "1 L",
       },
       {
         eyebrow: "Étape 2",
-        title: "Protéine Brésilienne",
-        desc: "Le complexe d'acides aminés comble les zones creusées, la protéine reconstruit, et les huiles de copaïba et de pracaxi scellent l'ensemble avec de la brillance.",
+        title: "Protéine brésilienne",
+        desc: "Le complexe d'acides aminés et la protéine contribuent à améliorer l'apparence de la fibre, et les huiles de copaïba et de pracaxi aident à lisser la surface et à apporter de la brillance.",
         volume: "1 L",
       },
     ],
@@ -86,53 +86,53 @@ export const fr = {
   ingredients: {
     eyebrow: "La formule",
     title: "Copaïba, pracaxi et acides aminés",
-    subtitle: "Six actifs venus d'Amazonie pour remplir la fibre au lieu de la maquiller.",
+    subtitle: "Six actifs venus d'Amazonie pour agir au cœur de la fibre au lieu de la maquiller.",
     items: [
       {
         name: "Huile de copaïba",
-        desc: "La résine amazonienne : elle apaise le cuir chevelu et calme les irritations.",
+        desc: "La résine amazonienne : elle aide à apaiser le cuir chevelu et à limiter les sensations d'inconfort.",
       },
       {
         name: "Huile de pracaxi",
-        desc: "La plus riche en acide béhénique au monde — c'est ce qui la fait pénétrer si profond.",
+        desc: "L'huile de pracaxi contient naturellement des acides gras et aide à nourrir les longueurs.",
       },
       {
         name: "Complexe d'acides aminés",
-        desc: "Les briques du cheveu, assez petites pour entrer là où la fibre s'est creusée.",
+        desc: "Les briques du cheveu, assez petites pour pénétrer la fibre et contribuer à améliorer son apparence.",
       },
       {
         name: "Protéine brésilienne",
-        desc: "Hydrolysée pour pénétrer la fibre et en combler les brèches durablement.",
+        desc: "Hydrolysée pour pénétrer la fibre et contribuer durablement à améliorer son apparence.",
       },
       {
         name: "Kératine",
-        desc: "La protéine dont le cheveu est fait : elle lisse et redonne du corps.",
+        desc: "La protéine qui compose le cheveu : elle lisse la fibre et lui redonne du corps.",
       },
       {
         name: "Panthénol",
-        desc: "Pro-vitamine B5 : retient l'hydratation au cœur du cheveu.",
+        desc: "Provitamine B5 : elle aide à maintenir l'hydratation au cœur du cheveu.",
       },
     ],
   },
   benefits: {
-    title: "Pourquoi il fait la différence",
+    title: "Ce qui fait la différence",
     subtitle: "Une formule professionnelle pensée pour des résultats visibles et durables",
     // order matches ICONS[] in components/Benefits.tsx
     items: [
       {
         title: "Cheveux lisses et disciplinés",
-        desc: "Les frisottis se calment, l'écaille se referme, le brushing tient plus longtemps.",
+        desc: "Les frisottis se calment et le brushing tient plus longtemps, même par temps humide.",
       },
       {
         title: "L'effet glow",
-        desc: "Une fibre comblée est une fibre lisse : la lumière se reflète au lieu de se disperser.",
+        desc: "Une surface plus lisse reflète mieux la lumière : les cheveux paraissent plus brillants.",
       },
       {
-        title: "Comblement en profondeur",
-        desc: "Les acides aminés remplissent les zones creuses là où les masques restent en surface.",
+        title: "Action en profondeur",
+        desc: "Les acides aminés pénètrent la fibre là où les masques restent en surface.",
       },
       {
-        title: "Kit Salon 2 × 1 L",
+        title: "Kit professionnel 2 × 1 L",
         desc: "Deux litres, les deux étapes : des dizaines d'applications, des mois d'utilisation.",
       },
     ],
@@ -141,42 +141,42 @@ export const fr = {
     eyebrow: "Origine Amazonie",
     title: "Deux huiles, une seule forêt",
     subtitle:
-      "Le copaïba et le pracaxi poussent côte à côte en Amazonie, et les coiffeurs brésiliens les associent depuis toujours : l'un apaise, l'autre répare en profondeur. Vitasilk les réunit dans un protocole professionnel.",
+      "Le copaïba et le pracaxi poussent côte à côte en Amazonie, et les coiffeurs brésiliens les associent depuis toujours : l'un apaise, l'autre nourrit en profondeur. Vitasilk les réunit dans un protocole professionnel.",
   },
   beforeAfter: {
-    title: "Avant / Après",
-    subtitle: "Faites glisser pour voir la transformation",
+    title: "Avant / après : découvrez la transformation",
+    subtitle: "Faites glisser le curseur",
     before: "Avant",
     after: "Après",
   },
   howto: {
-    title: "3 gestes, résultat salon",
+    title: "3 gestes pour un résultat digne d'un salon",
     steps: [
       {
         title: "Lavez — Étape 1",
-        desc: "Lavez avec le shampooing pré-traitement, deux fois si les cheveux sont chargés. Essorez sans sécher complètement.",
+        desc: "Lavez avec le shampooing pré-traitement, deux fois si les cheveux sont chargés. Essorez délicatement sans sécher complètement.",
       },
       {
         title: "Appliquez — Étape 2",
-        desc: "Appliquez la protéine mèche par mèche sur cheveux essorés. Aucun temps de pause : enchaînez dès que tout est couvert.",
+        desc: "Répartissez la protéine mèche par mèche sur cheveux essorés — environ 60 à 100 ml selon la longueur. Aucun temps de pause : enchaînez dès que tout est couvert.",
       },
       {
         title: "Rincez & coiffez",
-        desc: "Rincez, séchez, puis passez le fer pour sceller le complexe. Admirez la brillance.",
+        desc: "Rincez selon les instructions, séchez, puis passez le fer à lisser à la température recommandée.",
       },
     ],
   },
   testimonials: {
     title: "Elles l'ont adopté",
-    subtitle: "+12 000 clientes satisfaites au Maroc",
+    subtitle: "Plus de 12 000 clientes satisfaites au Maroc",
     items: [
       {
         name: "Salma — Casablanca",
-        text: "Mes cheveux étaient poreux à force de mèches, ils ne gardaient plus rien. Là ils ont retrouvé de la densité — on le sent au toucher, pas seulement à l'œil.",
+        text: "Mes cheveux étaient poreux à force de mèches, ils ne gardaient plus rien. En suivant le protocole, je les ai trouvés plus épais au toucher et plus faciles à coiffer.",
       },
       {
         name: "Imane — Rabat",
-        text: "Ce qui m'a convaincue c'est l'absence de temps de pause. J'ai fait les deux étapes à la suite, en moins d'une heure tout était fini.",
+        text: "Ce qui m'a convaincue, c'est l'absence de temps de pause. J'ai fait les deux étapes à la suite, en moins d'une heure tout était fini.",
       },
       {
         name: "Khadija — Marrakech",
@@ -184,25 +184,25 @@ export const fr = {
       },
       {
         name: "Sara — Tanger",
-        text: "Six semaines après, mes pointes ne fourchent plus. Et avec deux litres j'en ai pour la saison entière au salon.",
+        text: "Six semaines après, mes pointes fourchent beaucoup moins. Et avec deux litres j'en ai pour la saison entière au salon.",
       },
     ],
   },
   offer: {
     title: "Offre spéciale",
     subtitle: "Stock limité — profitez du prix spécial",
-    unit: "Filler Glow Complex — Kit 2 × 1 L",
-    save: (pct: number) => `Économisez ${pct}%`,
+    unit: "Filler Glow Complex — kit 2 × 1 L",
+    save: (pct: number) => `Économisez ${pct} %`,
     perLitre: (price: string) => `soit ${price} le litre`,
     twoBottles: "2 flacons — 2 litres au total",
     freeDelivery: "Livraison gratuite",
     cod: "Paiement à la livraison",
     guarantee: "Satisfaite ou remboursée",
-    countdown: { title: "L'offre expire dans", h: "Heures", m: "Minutes", s: "Secondes" },
+    countdown: { title: "L'offre expire dans :", h: "Heures", m: "Minutes", s: "Secondes" },
     cta: "Commander maintenant",
   },
   form: {
-    title: "Commandez maintenant",
+    title: "Commander maintenant",
     subtitle:
       "Remplissez le formulaire — nous vous appelons pour confirmer. Paiement à la livraison.",
     name: "Nom complet",
@@ -222,7 +222,7 @@ export const fr = {
     errorText:
       "Vérifiez votre connexion et réessayez, ou commandez directement sur WhatsApp — votre commande est conservée.",
     retry: "Réessayer",
-    whatsapp: "Commander sur WhatsApp",
+    whatsapp: "Commander via WhatsApp",
     errors: {
       name: "Veuillez entrer votre nom",
       phone: "Numéro de téléphone invalide",
@@ -234,7 +234,7 @@ export const fr = {
     items: [
       {
         q: "Contient-il du formol ou de l'acide glyoxylique ?",
-        a: "Non, ni l'un ni l'autre. Le Filler Glow est un soin comblant : il remplit et discipline la fibre sans ces substances et sans vapeurs irritantes.",
+        a: "Le Filler Glow ne contient aucune de ces deux substances. C'est un soin protéiné : il aide à discipliner et à améliorer l'apparence de la fibre sans elles et sans vapeurs irritantes. La liste complète des ingrédients figure sur l'étiquette de chaque flacon.",
       },
       {
         q: "Il n'y a vraiment aucun temps de pause ?",
@@ -242,15 +242,31 @@ export const fr = {
       },
       {
         q: "Puis-je sauter l'étape 1 et n'utiliser que la protéine ?",
-        a: "Ce n'est pas conseillé. Le shampooing pré-traitement retire le calcaire et les silicones qui bouchent la fibre : sans lui la protéine reste en surface et l'effet part au premier lavage. C'est précisément pour cela que le kit est vendu en deux flacons.",
+        a: "Ce n'est pas conseillé. Le shampooing pré-traitement retire le calcaire et les silicones déposés sur la fibre : sans lui la protéine reste en surface et l'effet part au premier lavage. C'est précisément pour cela que le kit est vendu en deux flacons.",
       },
       {
-        q: "Convient-il aux cheveux colorés ou bouclés ?",
-        a: "Oui. La coloration rend la fibre poreuse, exactement ce que ce complexe vient combler — et il ravive les reflets. Sur cheveux bouclés il discipline et allège la boucle sans la supprimer : c'est un soin comblant, pas un défrisage.",
+        q: "Convient-il à tous les types de cheveux ?",
+        a: "Il convient aux cheveux colorés, méchés, bouclés ou naturels, et il est particulièrement utile sur cheveux poreux. Sur cheveux bouclés, il discipline et allège la boucle sans la supprimer : c'est un soin, pas un défrisage. Sur cheveux décolorés ou très fragilisés, testez d'abord sur une mèche.",
+      },
+      {
+        q: "Faut-il faire un test avant la première utilisation ?",
+        a: "Oui. Appliquez une petite quantité derrière l'oreille et sur une mèche discrète 48 h avant, et vérifiez qu'aucune réaction n'apparaît. Ce test est recommandé pour tout soin capillaire professionnel.",
+      },
+      {
+        q: "Quelle quantité utiliser, et à quelle fréquence ?",
+        a: "Environ 60 à 100 ml d'étape 2 par application, selon la longueur et l'épaisseur des cheveux. Une application toutes les 4 à 6 semaines suffit. Sur cheveux très poreux, deux applications à quinze jours d'intervalle pour démarrer, puis on espace.",
+      },
+      {
+        q: "Combien d'applications le kit permet-il ?",
+        a: "Selon la longueur et l'épaisseur des cheveux, comptez 10 à 16 protocoles complets — plusieurs mois d'utilisation, ou une saison entière en salon.",
+      },
+      {
+        q: "Quelles précautions faut-il prendre ?",
+        a: "Réservé à un usage externe. Évitez le contact avec les yeux, aérez la pièce pendant le passage du fer, et n'utilisez pas les produits sur un cuir chevelu irrité ou lésé. Tenir hors de portée des enfants.",
       },
       {
         q: "Comment se passe la livraison ?",
-        a: "Livraison gratuite partout au Maroc en 24 à 48h. Vous payez uniquement à la réception de votre commande.",
+        a: "Livraison gratuite partout au Maroc en 24 à 48 h. Vous payez uniquement à la réception de votre commande.",
       },
     ],
   },
