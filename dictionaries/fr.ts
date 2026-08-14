@@ -171,19 +171,19 @@ export const fr = {
     subtitle: "Plus de 12 000 clientes satisfaites au Maroc",
     items: [
       {
-        name: "Salma — Casablanca",
+        name: "Dounia — Témara",
         text: "Mes cheveux étaient poreux à force de mèches, ils ne gardaient plus rien. En suivant le protocole, je les ai trouvés plus épais au toucher et plus faciles à coiffer.",
       },
       {
-        name: "Imane — Rabat",
+        name: "Yasmine — Berrechid",
         text: "Ce qui m'a convaincue, c'est l'absence de temps de pause. J'ai fait les deux étapes à la suite, en moins d'une heure tout était fini.",
       },
       {
-        name: "Khadija — Marrakech",
+        name: "Naima — Khémisset",
         text: "Je suis coiffeuse et je l'utilise en cabine. Le shampooing de l'étape 1 change vraiment tout : la protéine accroche différemment après.",
       },
       {
-        name: "Sara — Tanger",
+        name: "Widad — Taza",
         text: "Six semaines après, mes pointes fourchent beaucoup moins. Et avec deux litres j'en ai pour la saison entière au salon.",
       },
     ],
