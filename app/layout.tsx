@@ -34,13 +34,13 @@ const tajawal = Tajawal({
 
 export const metadata: Metadata = {
   metadataBase: new URL(SITE_URL),
-  title: "Vitasilk Filler Glow Complex — Kit 2 × 1L | فيلر كلو بجوج مراحل",
+  title: "Vitasilk Filler Glow Complex — Kit 2 × 1L | بروتوكول بجوج مراحل",
   description:
     "Vitasilk Filler Glow Complex — kit professionnel en deux étapes, 2 × 1L. Huiles de copaïba et de pracaxi, complexe d'acides aminés et protéine brésilienne. Sans formol, sans acide glyoxylique et sans temps de pause. Livraison gratuite au Maroc, paiement à la livraison.",
   openGraph: {
     title: "Vitasilk Filler Glow Complex — Kit 2 × 1L",
     description:
-      "Le protocole brésilien en deux étapes : un shampooing pré-traitement puis la protéine, sans aucun temps de pause. Copaïba, pracaxi et acides aminés pour combler la fibre. Livraison gratuite au Maroc — paiement à la livraison.",
+      "Le protocole brésilien en deux étapes : un shampooing pré-traitement puis la protéine, sans aucun temps de pause. Copaïba, pracaxi et acides aminés pour agir au cœur de la fibre. Livraison gratuite au Maroc — paiement à la livraison.",
     // dimensions come from the file, so they cannot drift out of sync with it
     images: [{ url: ogImage.src, width: ogImage.width, height: ogImage.height }],
     locale: "ar_MA",
