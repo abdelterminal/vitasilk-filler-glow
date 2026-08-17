@@ -5,7 +5,7 @@
 // hardcode a price here: it would silently desync from `lib/config.ts`.
 
 export const fr = {
-  announce: "Livraison gratuite partout au Maroc — Paiement à la livraison",
+  announce: "Livraison gratuite partout au Maroc — paiement à la livraison",
   nav: { brand: "Vitasilk", cta: "Commander" },
   hero: {
     eyebrow: "Vitasilk Professional",
@@ -161,7 +161,7 @@ export const fr = {
         desc: "Répartissez la protéine mèche par mèche sur cheveux essorés — environ 60 à 100 ml selon la longueur. Aucun temps de pause : enchaînez dès que tout est couvert.",
       },
       {
-        title: "Rincez & coiffez",
+        title: "Rincez et coiffez",
         desc: "Rincez selon les instructions, séchez, puis passez le fer à lisser à la température recommandée.",
       },
     ],
