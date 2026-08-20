@@ -211,6 +211,7 @@ export const fr = {
     phonePh: "06 XX XX XX XX",
     city: "Ville",
     cityPh: "Votre ville",
+    cities: ["Casablanca","Rabat","Salé","Temara","Marrakech","Fès","Agadir","Tanger","Meknès","Oujda","Kénitra","Tétouan","El Jadida","Khouribga","Safi","Beni Mellal","Nador","Ouarzazate","Settat","Berrechid","Errachidia","Taza","Laâyoune","Dakhla"],
     qty: "Quantité",
     total: "Total",
     submit: "Confirmer ma commande",

@@ -28,7 +28,7 @@ export function OrderForm() {
     const next: FieldErrors = {};
     if (name.trim().length < 3) next.name = t.form.errors.name;
     if (!isValidMoroccanPhone(phone)) next.phone = t.form.errors.phone;
-    if (city.trim().length < 2) next.city = t.form.errors.city;
+    if (!city) next.city = t.form.errors.city;
     setErrors(next);
     return Object.keys(next).length === 0;
   };
@@ -172,14 +172,18 @@ export function OrderForm() {
                   <label htmlFor="order-city" className="mb-1.5 block text-sm text-crema-dim">
                     {t.form.city}
                   </label>
-                  <input
+                  <select
                     id="order-city"
                     value={city}
                     onChange={(e) => setCity(e.target.value)}
-                    placeholder={t.form.cityPh}
-                    autoComplete="address-level2"
                     className={inputClass(errors.city)}
-                  />
+                    required
+                  >
+                    <option value="" disabled>{t.form.cityPh}</option>
+                    {t.form.cities.map((c) => (
+                      <option key={c} value={c}>{c}</option>
+                    ))}
+                  </select>
                   {errors.city && <p className="mt-1 text-xs text-red-700">{errors.city}</p>}
                 </div>
 
