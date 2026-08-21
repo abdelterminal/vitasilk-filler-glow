@@ -177,8 +177,8 @@ export const ar: Dict = {
     ],
   },
   testimonials: {
-    title: "هوما جرّبوه",
-    subtitle: "أكثر من 12 000 زبونة راضية فالمغرب",
+    title: "كيفاش تدخليه فروتينك",
+    subtitle: "أمثلة توضيحية للاستعمال — ماشي آراء موثقة",
     items: [
       {
         name: "دنيا — تمارة",
@@ -200,14 +200,14 @@ export const ar: Dict = {
   },
   offer: {
     title: "عرض خاص",
-    subtitle: "الكمية محدودة — استافدي من الثمن الخاص",
+    subtitle: "استافدي من الثمن الحالي، والتوفر كيتأكد فالمكالمة",
     unit: "Filler Glow Complex — كيت ⁦2 × 1⁩ لتر",
     save: (pct: number) => `وفّري ${pct}%`,
     perLitre: (price: string) => `يعني ${price} للتر`,
     twoBottles: "جوج قرعات — جوج لترات فالمجموع",
     freeDelivery: "التوصيل بالمجان",
     cod: "الخلاص عند الاستلام",
-    guarantee: "راضية ولا ترجاع الفلوس",
+    guarantee: "شروط الاستبدال كتتأكد قبل الشحن",
     countdown: { title: "العرض كيسالي من بعد:", h: "ساعات", m: "دقائق", s: "ثواني" },
     cta: "اطلبي دابا",
   },

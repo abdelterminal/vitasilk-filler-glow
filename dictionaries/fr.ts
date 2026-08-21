@@ -167,8 +167,8 @@ export const fr = {
     ],
   },
   testimonials: {
-    title: "Elles l'ont adopté",
-    subtitle: "Plus de 12 000 clientes satisfaites au Maroc",
+    title: "Comment l’intégrer à votre routine",
+    subtitle: "Exemples d’utilisation — pas des avis clients vérifiés",
     items: [
       {
         name: "Dounia — Témara",
@@ -190,14 +190,14 @@ export const fr = {
   },
   offer: {
     title: "Offre spéciale",
-    subtitle: "Stock limité — profitez du prix spécial",
+    subtitle: "Profitez du prix actuel ; la disponibilité est confirmée par téléphone",
     unit: "Filler Glow Complex — kit 2 × 1 L",
     save: (pct: number) => `Économisez ${pct} %`,
     perLitre: (price: string) => `soit ${price} le litre`,
     twoBottles: "2 flacons — 2 litres au total",
     freeDelivery: "Livraison gratuite",
     cod: "Paiement à la livraison",
-    guarantee: "Satisfaite ou remboursée",
+    guarantee: "Conditions d’échange confirmées avant l’expédition",
     countdown: { title: "L'offre expire dans :", h: "Heures", m: "Minutes", s: "Secondes" },
     cta: "Commander maintenant",
   },
