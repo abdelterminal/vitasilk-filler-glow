@@ -134,7 +134,7 @@ body {
   position:relative;overflow:hidden}
 .hero-title-inner::before{content:'';position:absolute;inset:0;border-radius:inherit;
   background:linear-gradient(180deg,rgba(255,255,255,0.04) 0%,transparent 50%);pointer-events:none}
-.hero-title-inner h1{color:#fff!important;margin:0;
+.hero-title-inner h1{color:#fff!important;margin:0;max-width:none;white-space:nowrap;font-size:clamp(1.05rem,5.2vw,2.4rem);line-height:1.1;
   text-shadow:0 2px 18px rgba(0,0,0,0.38),0 0 38px rgba(232,200,106,0.22)}
 .hero-title-inner h1 span{color:#fff!important;-webkit-text-fill-color:#fff!important;
   background:none!important;-webkit-background-clip:unset!important;background-clip:unset!important}
