@@ -33,7 +33,7 @@ export function Hero() {
     <header className="relative isolate overflow-hidden bg-gradient-to-b from-espresso via-espresso to-bean">
       {/* top bar */}
       <div className="relative z-20 mx-auto flex w-full max-w-6xl items-center justify-between px-5 pt-5">
-        <Image src="/logo-vitasilk.svg" alt={t.nav.brand} width={160} height={36} priority className="h-6 w-auto sm:h-7" />
+        <Image src="/logo.avif" alt={t.nav.brand} width={160} height={36} priority className="h-6 w-auto sm:h-7" />
         <LanguageToggle />
       </div>
 

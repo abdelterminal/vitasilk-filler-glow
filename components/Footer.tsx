@@ -9,7 +9,7 @@ export function Footer() {
   return (
     <footer className="border-t border-gold/20 bg-bean px-5 py-12 text-center">
       <Image
-        src="/logo-vitasilk-full.svg"
+        src="/logo.avif"
         alt={t.nav.brand}
         width={220}
         height={65}
