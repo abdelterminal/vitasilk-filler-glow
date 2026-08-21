@@ -59,10 +59,14 @@ export function Hero() {
           <motion.p {...stagger(0)} className="mb-3 text-sm uppercase tracking-[0.35em] text-crema-dim">
             {t.hero.eyebrow}
           </motion.p>
-          <motion.h1 {...stagger(1)} className="font-display text-5xl leading-tight sm:text-6xl lg:text-7xl">
-            <span className="block text-crema">{t.hero.title1}</span>
-            <span className="block text-gold-shimmer">{t.hero.title2}</span>
-          </motion.h1>
+          <div className="hero-title-wrap">
+            <div className="hero-title-inner">
+              <motion.h1 {...stagger(1)} className="font-display text-5xl leading-tight sm:text-6xl lg:text-7xl">
+                <span className="block text-crema">{t.hero.title1}</span>
+                <span className="block text-gold-shimmer">{t.hero.title2}</span>
+              </motion.h1>
+            </div>
+          </div>
           <motion.p {...stagger(2)} className="mx-auto mt-5 max-w-md text-base leading-relaxed text-crema-dim md:mx-0">
             {t.hero.subtitle}
           </motion.p>
